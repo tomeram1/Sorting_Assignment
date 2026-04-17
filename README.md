@@ -15,6 +15,9 @@ Merge Sort: Consistent Performance, without any major changes. The runtimes for 
 
 Scalability and Limitations:
 Hybrid Scale Comparison & Theoretical Analysis: We found that running Insertion Sort on 10^6 elements was computationally impractical, as the estimated time for completion would exceed several hours. Therefore:
+
 1.We conducted the full comparative experiment across a shared range of input sizes (from n=100 up to n=5,000). This allowed us to visualize the clear divergence between the quadratic growth of Insertion Sort and the O(n log n) growth of Merge Sort and Quick Sort.
+
 2.While Merge Sort and Quick Sort could be tested on much larger scales, we used the data from the n=100 to n=5,000 range to confirm the O(n^2) trend for Insertion Sort.
+
 3.This approach allowed us to work withing the limits of our computer performance without crashing the execution environment, while still providing a statistically significant comparison of how these algorithms scale relative to one another.
